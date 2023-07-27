@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "reTweet_Bird",
+  "version": "1.0",
+  "description": "Replace vector icon with an image",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon": "old_logo.png"
+  },
+  "icons": {
+    "48": "old_logo.png",
+    "96": "old_logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
